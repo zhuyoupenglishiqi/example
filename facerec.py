@@ -26,16 +26,16 @@ submit_button = tools.button(top, e, "识别", l=[])
 submit_button.pack()
 
 # （5）
-# route = input('请输入路径: ')
-# check = tools.route_check(route)
-# print(check)
-# while True:
-#     if check == 'routeError':
-#         route = input('路径错误，请重新输入： ')
-#         check = tools.route_check(route)
-#     else:
-#         print('路径正确，可以去测试颜值了！')
-#         break
+route = input('请输入路径: ')
+check = tools.route_check(route)
+print(check)
+while True:
+    if check == 'routeError':
+        route = input('路径错误，请重新输入： ')
+        check = tools.route_check(route)
+    else:
+        print('路径正确，可以去测试颜值了！')
+        break
 
 # （1）
 top.mainloop()
